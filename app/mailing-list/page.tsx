@@ -1,10 +1,7 @@
 "use client";
 
-import dynamic from "next/dynamic";
-
+import BrevoForm from "./BrevoForm";
 import styles from "./MailingList.module.css";
-
-const BrevoForm = dynamic(() => import("./BrevoForm"), { ssr: false });
 
 export default function MailingList() {
   return (
