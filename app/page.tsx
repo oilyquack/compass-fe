@@ -1,15 +1,38 @@
-import Link from "next/link";
+import Button from "./components/Button";
+import styles from "./Home.module.css";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Compass Festival</h1>
+    <div className={styles.Home}>
+      <div className={styles["Home-logoWrapper"]}>
+        <img
+          alt="Compass Logo"
+          className={styles["Home-logo"]}
+          src="/images/compass-logo.svg"
+        />
+      </div>
 
-      <br />
+      <time className="font-size-lg mg-btm-sm">17th - 19th OCTOBER 2025</time>
 
-      <Link href="/mailing-list" target="_blank">
-        Join the mailing list
-      </Link>
+      <p className="font-size-md mg-btm-lg">SAVE THE DATE</p>
+
+      <div className="mg-btm-md">
+        <Button href="/mailing-list" target="_blank">
+          JOIN THE MAILING LIST
+        </Button>
+      </div>
+
+      <div className="mg-btm-lg">
+        <Button
+          destination="outbound"
+          href="http://example.com"
+          target="_blank"
+        >
+          APPLY TO PLAY
+        </Button>
+      </div>
+
+      <p className="font-size-sm">FULL WEBSITE & LINEUP COMING SOON</p>
     </div>
   );
 }

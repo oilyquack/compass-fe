@@ -1,7 +1,16 @@
 .Layout {
+  background-image: url("/images/compass-background-mob.jpg");
+  background-position: center;
+  background-size: cover;
   display: grid;
   /* grid-template-rows: 64px auto 64px; */
   min-height: 100dvh;
+}
+
+@media (min-width: 768px) {
+  .Layout {
+    background-image: url("/images/compass-background.jpg");
+  }
 }
 
 /* .Layout-nav {
