@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+// import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${styles.Layout}`}
       >
-        <nav className={styles["Layout-nav"]}>
+        {/* <nav className={styles["Layout-nav"]}>
           <ul className={styles["Layout-navItems"]}>
             <li>
               <Link href="/">Home</Link>
@@ -42,22 +42,19 @@ export default function RootLayout({
               <a href="https://example.com">Apply to play</a>
             </li>
             <li>
-              <a href="https://example.com">Apply to volunteer</a>
+              <Link href="/mailing-list">Join the mailing list</Link>
             </li>
             <li>
-              <a href="https://example.com">Apply to sponsor</a>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
+              <a href="/archive">2024</a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         <main className={styles["Layout-main"]}>{children}</main>
 
-        <footer className={styles["Layout-footer"]}>
+        {/* <footer className={styles["Layout-footer"]}>
           <p>Copyright &copy; Compass {new Date().getFullYear()}</p>
-        </footer>
+        </footer> */}
       </body>
     </html>
   );
