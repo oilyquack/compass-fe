@@ -29,10 +29,12 @@
   mask-composite: exclude;
 }
 
-.Button:hover {
+.Button:hover,
+.Button:focus {
   background: #ff97d6;
 }
 
-.Button:hover::before {
+.Button:hover,
+.Button:focus::before {
   background: #ff97d6;
 }
