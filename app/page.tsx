@@ -27,7 +27,9 @@ export default function Home() {
         </Button>
       </div>
 
-      <p className="font-size-sm">FULL WEBSITE & LINEUP COMING SOON</p>
+      <p className="font-size-sm mg-btm-lg">
+        FULL WEBSITE & LINEUP COMING SOON
+      </p>
     </div>
   );
 }
