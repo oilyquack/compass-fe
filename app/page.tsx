@@ -22,16 +22,6 @@ export default function Home() {
         </Button>
       </div>
 
-      <div className="mg-btm-lg">
-        <Button
-          destination="outbound"
-          href="http://example.com"
-          target="_blank"
-        >
-          APPLY TO PLAY
-        </Button>
-      </div>
-
       <p className="font-size-sm">FULL WEBSITE & LINEUP COMING SOON</p>
     </div>
   );
