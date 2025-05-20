@@ -11,8 +11,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Compass Festival",
-  description: "Compass Festival",
+  title: "Compass Music",
+  description:
+    "A celebration of grassroots music, independent artists & community by the sea in Folkestone, Kent.",
 };
 
 export default function RootLayout({
