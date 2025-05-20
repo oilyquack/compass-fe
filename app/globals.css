@@ -37,6 +37,10 @@ a {
   }
 }
 
+.font-size-xl {
+  font-size: 2rem;
+}
+
 .font-size-lg {
   font-size: 1.5rem;
 }

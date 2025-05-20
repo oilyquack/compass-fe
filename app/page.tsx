@@ -12,9 +12,14 @@ export default function Home() {
         />
       </div>
 
-      <time className="font-size-lg mg-btm-sm">17th - 19th OCTOBER 2025</time>
+      <time className="font-size-xl mg-btm-md">17th - 19th OCTOBER 2025</time>
 
-      <p className="font-size-md mg-btm-lg">SAVE THE DATE</p>
+      <p className="font-size-lg mg-btm-md">SAVE THE DATE</p>
+
+      <p className="font-size-md mg-btm-lg">
+        A CELEBRATION OF GRASSROOTS MUSIC, INDEPENDENT ARTISTS & COMMUNITY BY
+        THE SEA IN FOLKESTONE, KENT.
+      </p>
 
       <div className="mg-btm-md">
         <Button href="/mailing-list" target="_blank">
