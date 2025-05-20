@@ -8,7 +8,7 @@ export default function Home() {
         <img
           alt="Compass Logo"
           className={styles["Home-logo"]}
-          src="/images/compass-logo.svg"
+          src="/images/compass-logo.png"
         />
       </div>
 
