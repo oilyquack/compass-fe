@@ -25,6 +25,25 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              function loadScript(a) {
+                var b = document.getElementsByTagName("head")[0],
+                  c = document.createElement("script");
+                c.type = "text/javascript";
+                c.src = "https://tracker.metricool.com/resources/be.js";
+                c.onreadystatechange = a;
+                c.onload = a;
+                b.appendChild(c);
+              }
+              loadScript(function() {
+                beTracker.t({ hash: "98917cdab84d97b3b27f6d0529f828e2" });
+              });
+            `,
+          }}
+        />
       </head>
 
       <body className={`${montserrat.variable} ${styles.Layout}`}>
