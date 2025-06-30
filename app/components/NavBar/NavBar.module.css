@@ -1,0 +1,12 @@
+.NavBar {
+    padding: 2rem 0;
+}
+
+.NavBar-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.NavBar-list li:not(:last-child) {
+    margin-right: 1rem;
+}

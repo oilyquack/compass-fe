@@ -1,0 +1,28 @@
+.Artist {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Artist-image {
+    border-radius: 1rem;
+    max-height: 33dvh;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .Artist {
+        align-items: start;
+        flex-direction: row;
+        gap: 1rem;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .Artist-image {
+        max-height: 80dvh;
+        width: 50%;
+    }
+}
+

@@ -1,0 +1,31 @@
+.Artist {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.Artist-imageWrapper {
+    aspect-ratio: 1 / 1;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.Artist-image {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.Artist-content {
+    padding: 1rem;
+}
+
+.Artist-heading {
+    color: #000;
+}
