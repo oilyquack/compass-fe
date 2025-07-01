@@ -5,6 +5,10 @@ import MusicPlayer from "./components/MusicPlayer";
 import SocialLinks from "./components/SocialLinks";
 import styles from "./Artist.module.css";
 
+export async function generateStaticParams() {
+  return artists.map((artist) => ({ slug: artist.slug }));
+}
+
 export default async function ArtistPage({
   params,
 }: {
