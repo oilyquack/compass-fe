@@ -10,7 +10,7 @@ export default function NavBar() {
           <NextLink href="/">HOME</NextLink>
         </li>
         <li>
-          <NextLink href="/artists">ARTISTS</NextLink>
+          <NextLink href="/line-up">ARTISTS</NextLink>
         </li>
       </ul>
     </nav>
