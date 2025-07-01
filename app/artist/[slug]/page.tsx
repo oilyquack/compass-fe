@@ -5,8 +5,13 @@ import MusicPlayer from "./components/MusicPlayer";
 import SocialLinks from "./components/SocialLinks";
 import styles from "./Artist.module.css";
 
-export default function ArtistPage({ params }: { params: { slug: string } }) {
-  const artist = artists.find((a) => a.slug === params.slug);
+export default async function ArtistPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const artist = artists.find((a) => a.slug === slug);
 
   if (!artist) {
     notFound();
