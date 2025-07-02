@@ -5,7 +5,6 @@ import artists from "../../../data/artists.json";
 import MusicPlayer from "./components/MusicPlayer";
 import SocialLinks from "./components/SocialLinks";
 import styles from "./Artist.module.css";
-
 import Section from "../../components/Section";
 
 export async function generateStaticParams() {

@@ -3,10 +3,11 @@ import NextLink from "next/link";
 import artists from "../../data/artists.json";
 import styles from "./LineUp.module.css";
 import Artist from "../artist/components/Artist";
+import Section from "../components/Section";
 
 export default function LineUpPage() {
   return (
-    <>
+    <Section>
       <h1 className="mg-btm-lg">Line Up</h1>
 
       <ul className={styles.LineUp}>
@@ -18,6 +19,6 @@ export default function LineUpPage() {
           </li>
         ))}
       </ul>
-    </>
+    </Section>
   );
 }
