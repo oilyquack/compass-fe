@@ -1,28 +1,38 @@
 .Artist {
+    align-items: start;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.Artist-image {
+.Artist-imageWrapper {
+    aspect-ratio: 1 / 1;
     border-radius: 1rem;
-    max-height: 33dvh;
-    max-width: 100%;
-    object-fit: contain;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
-@media (min-width: 768px) {
+
+.Artist-image {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.Artist-content {
+    align-self: start;
+}
+
+@media (min-width: 992px) {
     .Artist {
-        align-items: start;
-        flex-direction: row;
-        gap: 1rem;
-        height: auto;
-        max-height: 100%;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
     }
 
-    .Artist-image {
-        max-height: 80dvh;
-        width: 50%;
+    .Artist-imageWrapper {
+        aspect-ratio: 1 / 1.5;
     }
 }
-

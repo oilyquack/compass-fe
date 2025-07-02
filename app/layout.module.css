@@ -8,20 +8,12 @@
   height: 100vh;
   min-height: 100dvh;
   min-width: 100dvw;
-  padding: 0 1rem;
   width: 100vw;
 }
 
 @media (min-width: 768px) {
   .Layout {
     background-image: url("/images/compass-background.jpg");
-    padding: 0 2rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .Layout {
-    padding: 0 4rem;
   }
 }
 
