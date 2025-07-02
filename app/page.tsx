@@ -12,18 +12,18 @@ export default function Home() {
         />
       </div>
 
-      <time className="font-size-xl mg-btm-md">17th - 19th OCTOBER 2025</time>
+      <time className="font-size-xl mg-btm-md">17th - 19th October 2025</time>
 
-      <p className="font-size-lg mg-btm-md">SAVE THE DATE</p>
+      <p className="font-size-lg mg-btm-md">Save the date</p>
 
       <p className="font-size-md mg-btm-lg">
-        A CELEBRATION OF GRASSROOTS MUSIC, INDEPENDENT ARTISTS & COMMUNITY BY
-        THE SEA IN FOLKESTONE, KENT.
+        A celebration of grassroots music, independent artists & community by
+        the sea in Folkestone, Kent.
       </p>
 
       <div className="mg-btm-md">
         <Button href="/mailing-list" target="_blank">
-          JOIN THE MAILING LIST
+          Join the mailing list
         </Button>
       </div>
 
@@ -33,12 +33,12 @@ export default function Home() {
           href="https://docs.google.com/forms/d/e/1FAIpQLScmHxSjH-NEGxdbWG3dpiMRMtDGJWc0MdyUE8w3oE-9sadRxQ/viewform?usp=dialog"
           target="_blank"
         >
-          APPLY TO PLAY
+          Apply to play
         </Button>
       </div>
 
       <p className="font-size-sm mg-btm-lg">
-        FULL WEBSITE & LINEUP COMING SOON
+        Full website & lineup coming soon
       </p>
     </div>
   );

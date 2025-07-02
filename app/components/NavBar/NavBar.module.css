@@ -7,6 +7,10 @@
     list-style-type: none;
 }
 
+.NavBar-list li {
+    text-transform: uppercase;
+}
+
 .NavBar-list li:not(:last-child) {
     margin-right: 1rem;
 }

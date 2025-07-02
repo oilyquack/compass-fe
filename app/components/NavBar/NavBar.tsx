@@ -7,10 +7,10 @@ export default function NavBar() {
     <nav className={styles.NavBar}>
       <ul className={styles["NavBar-list"]}>
         <li>
-          <NextLink href="/">HOME</NextLink>
+          <NextLink href="/">Home</NextLink>
         </li>
         <li>
-          <NextLink href="/line-up">ARTISTS</NextLink>
+          <NextLink href="/line-up">Artists</NextLink>
         </li>
       </ul>
     </nav>
