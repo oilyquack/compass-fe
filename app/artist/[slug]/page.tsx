@@ -37,7 +37,7 @@ export default async function ArtistPage({
         </div>
 
         <div className={styles["Artist-content"]}>
-          <h1 className="mg-btm-md">{artist.name}</h1>
+          <h1 className="font-size-xxxl mg-btm-md">{artist.name}</h1>
           <div className="mg-btm-md">
             <SocialLinks artist={artist} />
           </div>
