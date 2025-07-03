@@ -1,19 +1,22 @@
 .Home {
   align-items: center;
-  color: #fff;
   display: flex;
+  justify-content: center;
+}
+
+.Home-content {
+  color: #fff;
   flex-direction: column;
-  justify-content: center;;
   max-width: 95vw;
   text-align: center;
 }
 
-.Home > * {
+.Home-content > * {
   text-transform: uppercase;
 }
 
 @media (min-width: 992px) {
-  .Home {
+  .Home-content {
     max-width: 50vw;
   }
 }

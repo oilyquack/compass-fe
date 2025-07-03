@@ -1,0 +1,29 @@
+.NavBar {
+    background-color: inherit;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.NavBar-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.NavBar-list li {
+    text-transform: uppercase;
+}
+
+.NavBar-list li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.NavBar-logo {
+    color: #fff;
+}
+
+.NavBar-logo:hover, .NavBar-logo:focus {
+    color: #dadada;
+}

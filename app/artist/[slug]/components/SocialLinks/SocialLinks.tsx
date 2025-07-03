@@ -1,4 +1,7 @@
-import NextImage from "next/image";
+import Facebook from "@/assets/Facebook";
+import Globe from "@/assets/Globe";
+import Instagram from "@/assets/Instagram";
+import TikTok from "@/assets/TikTok";
 
 import styles from "./SocialLinks.module.css";
 import { ArtistInterface } from "../../../../line-up/artist.interface";
@@ -8,9 +11,8 @@ export default function SocialLinks({ artist }: { artist: ArtistInterface }) {
     <div className={styles.SocialLinks}>
       {artist.website && (
         <a href={artist.website} target="_blank" rel="noopener noreferrer">
-          <NextImage
-            src="/images/icons/globe.svg"
-            alt="website"
+          <Globe
+            className={styles["SocialLinks-icon"]}
             width={48}
             height={48}
           />
@@ -18,9 +20,8 @@ export default function SocialLinks({ artist }: { artist: ArtistInterface }) {
       )}
       {artist.facebook && (
         <a href={artist.facebook} target="_blank" rel="noopener noreferrer">
-          <NextImage
-            src="/images/icons/facebook.svg"
-            alt="Facebook"
+          <Facebook
+            className={styles["SocialLinks-icon"]}
             width={48}
             height={48}
           />
@@ -28,9 +29,8 @@ export default function SocialLinks({ artist }: { artist: ArtistInterface }) {
       )}
       {artist.instagram && (
         <a href={artist.instagram} target="_blank" rel="noopener noreferrer">
-          <NextImage
-            src="/images/icons/instagram.svg"
-            alt="Facebook"
+          <Instagram
+            className={styles["SocialLinks-icon"]}
             width={48}
             height={48}
           />
@@ -38,9 +38,8 @@ export default function SocialLinks({ artist }: { artist: ArtistInterface }) {
       )}
       {artist.tiktok && (
         <a href={artist.tiktok} target="_blank" rel="noopener noreferrer">
-          <NextImage
-            src="/images/icons/tiktok.svg"
-            alt="Facebook"
+          <TikTok
+            className={styles["SocialLinks-icon"]}
             width={48}
             height={48}
           />

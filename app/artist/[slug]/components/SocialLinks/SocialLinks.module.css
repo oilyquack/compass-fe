@@ -2,3 +2,12 @@
     display: flex;
     gap: 1rem;
 }
+
+.SocialLinks-icon {
+    color: #fff;
+}
+
+.SocialLinks-icon:hover,
+.SocialLinks-icon:focus {
+    color: #dadada;
+}

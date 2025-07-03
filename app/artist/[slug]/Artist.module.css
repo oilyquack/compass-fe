@@ -5,12 +5,46 @@
     height: 100%;
 }
 
+.Artist-imageOuterWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.Artist-star {
+    background-image: url("/illustrations/star.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    left: -35px;
+    top: 20%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.Artist-crescent {
+    background-image: url("/illustrations/crescent.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 20%;
+    bottom: -20px;
+    z-index: 2;
+    pointer-events: none;
+}
+
 .Artist-imageWrapper {
     aspect-ratio: 1 / 1;
     border-radius: 1rem;
     overflow: hidden;
     position: relative;
     width: 100%;
+    z-index: 1;
 }
 
 .Artist-image {
@@ -19,13 +53,26 @@
     width: 100%;
 }
 
+.Artist-title {
+    background: linear-gradient(90deg, #ff97d6, #f4e816);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
 .Artist-content {
     align-self: start;
 }
 
+.Artist-bio {
+    font-family: var(--font-lato);
+    line-height: 1.6;
+}
+
 @media (min-width: 992px) {
     .Artist {
-        align-items: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem;

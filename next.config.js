@@ -1,6 +1,4 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   webpack(config) {
     // Exclude SVGs from being processed by default file loader
     config.module.rules.push({

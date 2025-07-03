@@ -1,0 +1,16 @@
+.Footer {
+    background: linear-gradient(90deg, #ff97d6, #f4e816);
+}
+
+.Footer-wave {
+  width: 100%;
+  height: 80px;
+  line-height: 0;
+}
+
+.Footer-logos {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
