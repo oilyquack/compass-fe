@@ -3,6 +3,7 @@
   color: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: center;;
   max-width: 95vw;
   text-align: center;
 }

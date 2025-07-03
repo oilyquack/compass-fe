@@ -13,7 +13,6 @@
     width: 100%;
 }
 
-
 .Artist-image {
     display: block;
     height: auto;
@@ -29,10 +28,10 @@
         align-items: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 2.5rem;
     }
 
     .Artist-imageWrapper {
-        aspect-ratio: 1 / 1.6;
+        aspect-ratio: 1 / 1.4;
     }
 }

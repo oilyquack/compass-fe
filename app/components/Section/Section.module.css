@@ -1,5 +1,12 @@
 .Section {
   margin: 0 auto;
-  padding: 0 3rem;
+  max-width: 1512px;
+  padding: 0 calc(1rem * 100 / 100);
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .Section {
+    padding: 0 calc(2.5rem * 100 / 100);
+  }
 }
