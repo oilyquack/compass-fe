@@ -3,7 +3,7 @@
 
   background-image: url("/images/compass-background-mob.jpg");
   background-repeat: repeat-y;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   min-height: 100dvh;

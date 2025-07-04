@@ -4,7 +4,15 @@
   --font-family: var(--font-montserrat); /* Add the font variable */
   
   --Footer-height: 200px;
-  --NavBar-height: 181px;
+  --NavBar-height: 89px;
+
+  --color-primary: #396cdf;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --NavBar-height: 181px;
+  }
 }
 
 html,

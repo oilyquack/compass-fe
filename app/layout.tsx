@@ -58,9 +58,11 @@ export default function RootLayout({
 
       <body className={`${montserrat.variable} ${lato.variable}`}>
         <main className={styles.Layout}>
-          <Section>
-            <NavBar />
-          </Section>
+          <header style={{ position: "relative" }}>
+            <Section>
+              <NavBar />
+            </Section>
+          </header>
           {children}
           <Footer />
         </main>
