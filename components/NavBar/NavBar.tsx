@@ -13,7 +13,7 @@ export default function NavBar() {
     <nav className={styles.NavBar}>
       <ul className={styles["NavBar-list"]}>
         <li>
-          <ul className={styles["NavBar-list"]}>
+          <ul className={styles["NavBar-sublist"]}>
             <li>
               <NextLink className={styles["NavBar-link"]} href="/line-up">
                 Lineup
