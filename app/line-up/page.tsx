@@ -9,7 +9,9 @@ import Artist from "../artist/components/Artist";
 export default function LineUpPage() {
   return (
     <Section>
-      <h1 className="mg-btm-lg">Line Up</h1>
+      <h1 className="mg-btm-md">Line Up</h1>
+
+      <p className="mg-btm-lg">First confirmed names - many more to come</p>
 
       <ul className={styles.LineUp}>
         {artists.map((artist) => (
