@@ -1,7 +1,4 @@
 .Layout {
-  --Footer-height: 200px;
-  --NavBar-height: 181px;
-
   background-color: #396cdf;
   display: flex;
   flex-direction: column;
