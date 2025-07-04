@@ -1,6 +1,7 @@
 import Facebook from "@/assets/Facebook";
 import Globe from "@/assets/Globe";
 import Instagram from "@/assets/Instagram";
+import Spotify from "@/assets/Spotify";
 import TikTok from "@/assets/TikTok";
 import { ArtistInterface } from "@/interfaces/artist.interface";
 
@@ -39,6 +40,15 @@ export default function SocialLinks({ artist }: { artist: ArtistInterface }) {
       {artist.tiktok && (
         <a href={artist.tiktok} target="_blank" rel="noopener noreferrer">
           <TikTok
+            className={styles["SocialLinks-icon"]}
+            width={48}
+            height={48}
+          />
+        </a>
+      )}
+      {artist.spotify && (
+        <a href={artist.spotify} target="_blank" rel="noopener noreferrer">
+          <Spotify
             className={styles["SocialLinks-icon"]}
             width={48}
             height={48}
