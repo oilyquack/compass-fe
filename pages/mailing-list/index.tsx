@@ -1,6 +1,7 @@
 "use client";
 
-import BrevoForm from "./BrevoForm";
+import BrevoForm from "@/components/BrevoForm";
+
 import styles from "./MailingList.module.css";
 
 export default function MailingList() {

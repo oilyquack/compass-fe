@@ -1,5 +1,6 @@
 import NextImage from "next/image";
 
+import Button from "@/components/Button";
 import Section from "@/components/Section";
 
 import styles from "./Footer.module.css";
@@ -40,6 +41,11 @@ export default function Footer() {
         </svg>
       </div>
       <Section className={styles["Footer-content"]}>
+        <div className="mg-btm-md">
+          <Button href="/mailing-list" target="_blank">
+            Join the mailing list
+          </Button>
+        </div>
         <div className={`${styles["Footer-logos"]} mg-btm-lg`}>
           <NextImage
             alt="Creative Folkestone"

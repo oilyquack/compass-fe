@@ -25,9 +25,7 @@ export default function Home() {
         </p>
 
         <div className="mg-btm-md">
-          <Button href="/mailing-list" target="_blank">
-            Join the mailing list
-          </Button>
+          <Button href="/line-up">Lineup</Button>
         </div>
 
         <div className="mg-btm-lg">
