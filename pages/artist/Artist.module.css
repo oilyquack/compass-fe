@@ -1,0 +1,128 @@
+.Layout {
+  --Footer-height: 200px;
+  --NavBar-height: 181px;
+
+  background-color: #396cdf;
+  display: grid;
+  grid-template-rows: var(--NavBar-height) auto var(--Footer-height);
+  height: 100%;
+  min-height: 100dvh;
+  min-width: 100dvw;
+  width: 100vw;
+}
+
+.Artist {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  height: 100%;
+}
+
+
+.Artist-imageOuterWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.Artist-worm {
+  background-image: url("/illustrations/worm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 122px;
+  width: 362px;
+  right: -150px;
+  top: 80px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .Artist-worm {
+    right: -180px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .Artist-worm {
+    right: -200px
+  }
+}
+
+
+.Artist-star {
+  background-image: url("/illustrations/star.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 152px;
+  width: 152px;
+  left: -76px;
+  top: 20%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.Artist-crescent {
+  background-image: url("/illustrations/crescent.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 218px;
+  width: 121px;
+  right: 20%;
+  bottom: -80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.Artist-imageWrapper {
+  aspect-ratio: 1 / 1;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.Artist-image {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.Artist-title {
+  background: linear-gradient(90deg, #ff97d6, #f4e816);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.Artist-content {
+  align-self: start;
+  position: relative;
+  z-index: 1;
+}
+
+.Artist-bio {
+  font-family: var(--font-lato);
+  line-height: 1.6;
+}
+
+@media (min-width: 992px) {
+  .Artist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .Artist-imageWrapper {
+    aspect-ratio: 1 / 1.1;
+  }
+}

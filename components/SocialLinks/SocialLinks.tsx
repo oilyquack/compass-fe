@@ -2,9 +2,9 @@ import Facebook from "@/assets/Facebook";
 import Globe from "@/assets/Globe";
 import Instagram from "@/assets/Instagram";
 import TikTok from "@/assets/TikTok";
+import { ArtistInterface } from "@/interfaces/artist.interface";
 
 import styles from "./SocialLinks.module.css";
-import { ArtistInterface } from "../../../../line-up/artist.interface";
 
 export default function SocialLinks({ artist }: { artist: ArtistInterface }) {
   return (

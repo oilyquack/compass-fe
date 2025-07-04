@@ -1,11 +1,13 @@
 .Layout {
+  --Footer-height: 200px;
+
   background-attachment: fixed;
   background-image: url("/images/compass-background-mob.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: var(--NavBar-height) auto var(--Footer-height);
   height: 100%;
   min-height: 100dvh;
   min-width: 100dvw;
@@ -16,9 +18,4 @@
   .Layout {
     background-image: url("/images/compass-background.jpg");
   }
-}
-
-.Layout-main {
-  display: flex;
-  flex-direction: column;
 }

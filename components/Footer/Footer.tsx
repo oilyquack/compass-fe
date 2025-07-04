@@ -6,7 +6,7 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    <>
+    <footer className={styles.Footer}>
       <div className={styles["Footer-wave"]}>
         <svg
           viewBox="0 0 1440 120"
@@ -39,25 +39,23 @@ export default function Footer() {
           />
         </svg>
       </div>
-      <footer className={styles.Footer}>
-        <Section>
-          <div className={`${styles["Footer-logos"]} mg-btm-lg`}>
-            <NextImage
-              alt="Creative Folkestone"
-              src="/assets/creative-folkestone.png"
-              width={191}
-              height={55}
-            />
+      <Section className={styles["Footer-content"]}>
+        <div className={`${styles["Footer-logos"]} mg-btm-lg`}>
+          <NextImage
+            alt="Creative Folkestone"
+            src="/assets/creative-folkestone.png"
+            width={191}
+            height={55}
+          />
 
-            <NextImage
-              width={88}
-              height={88}
-              alt="Compass Music"
-              src="/assets/compass-music.png"
-            />
-          </div>
-        </Section>
-      </footer>
-    </>
+          <NextImage
+            width={88}
+            height={88}
+            alt="Compass Music"
+            src="/assets/compass-music.png"
+          />
+        </div>
+      </Section>
+    </footer>
   );
 }

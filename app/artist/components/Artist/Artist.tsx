@@ -1,6 +1,7 @@
 import NextImage from "next/image";
 
-import { ArtistInterface } from "../../../line-up/artist.interface";
+import { ArtistInterface } from "@/interfaces/artist.interface";
+
 import styles from "./Artist.module.css";
 
 export default function Artist({ artist }: { artist: ArtistInterface }) {

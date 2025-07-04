@@ -1,5 +1,11 @@
 .Footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Footer-content {
     background: linear-gradient(90deg, #ff97d6, #f4e816);
+    max-width: 100%;
 }
 
 .Footer-wave {

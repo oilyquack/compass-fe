@@ -24,12 +24,14 @@
 .Home-logoWrapper {
   max-width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  
 }
 
 @media (min-width: 768px) {
   .Home-logoWrapper {
+    margin: auto;
     max-width: 580px;
   }
 }
