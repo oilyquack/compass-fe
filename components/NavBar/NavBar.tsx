@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import NextLink from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import CompassLogo from "@/assets/CompassLogo";
 
@@ -10,6 +10,10 @@ import styles from "./NavBar.module.css";
 export default function NavBar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <nav className={styles.NavBar}>
