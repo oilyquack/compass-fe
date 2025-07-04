@@ -1,5 +1,8 @@
 .NavBar {
+    display: flex;
+    align-items: center;
     background-color: inherit;
+    height: 181px;
     padding: 2rem 0;
     width: 100%;
 }
