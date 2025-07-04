@@ -1,22 +1,16 @@
 .NavBar {
-  display: flex;
   align-items: center;
-  background-color: inherit;
-  padding: 2rem 0;
+  display: grid;
+  grid-template-areas: '. home button';
+  grid-template-columns: 1fr auto 1fr;
   width: 100%;
-  justify-content: space-between;
-}
-
-@media (min-width: 768px) {
-  .NavBar {
-    height: var(--NavBar-height);
-  }
 }
 
 .NavBar-button {
   background: none;
   border: none;
   color: #fff;
+  grid-area: button;
   justify-self: end;
 }
 
@@ -112,12 +106,10 @@
   .NavBar {
     display: grid;
     grid-template-areas: 'links home cta';
-    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     width: 100%;
     height: auto;
     gap: 0;
-    padding: 0;
     background: none;
   }
 

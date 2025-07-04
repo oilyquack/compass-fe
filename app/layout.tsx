@@ -59,7 +59,7 @@ export default function RootLayout({
       <body className={`${montserrat.variable} ${lato.variable}`}>
         <main className={styles.Layout}>
           <header style={{ position: "relative" }}>
-            <Section>
+            <Section className={styles["Layout-navbar"]}>
               <NavBar />
             </Section>
           </header>

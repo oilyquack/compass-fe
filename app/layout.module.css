@@ -19,3 +19,7 @@
     background-repeat: no-repeat;
   }
 }
+
+.Layout-navbar {
+  padding: 1rem calc(1rem * 100 / 100);
+}

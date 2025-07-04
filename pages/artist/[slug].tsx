@@ -21,7 +21,7 @@ export default function ArtistPage({ artist }: { artist: ArtistInterface }) {
         <title>{artist.name} | Compass Festival</title>
         <meta name="description" content={artist.bio} />
       </Head>
-      <Section>
+      <Section className={styles["Layout-navbar"]}>
         <NavBar />
       </Section>
       <Section>

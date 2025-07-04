@@ -7,6 +7,10 @@
   width: 100vw;
 }
 
+.Layout-navbar {
+  padding: 1rem calc(1rem * 100 / 100);;
+}
+
 .Artist {
   align-items: start;
   display: flex;
