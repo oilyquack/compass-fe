@@ -1,8 +1,8 @@
 import NextLink from "next/link";
 
 import Section from "@/components/Section";
+import artists from "@/data/artists.json";
 
-import artists from "../../data/artists.json";
 import styles from "./LineUp.module.css";
 import Artist from "../artist/components/Artist";
 

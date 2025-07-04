@@ -1,11 +1,10 @@
 .Layout {
   --Footer-height: 200px;
 
-  background-attachment: fixed;
   background-image: url("/images/compass-background-mob.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat-y;
+  background-size: auto;
   display: grid;
   grid-template-rows: var(--NavBar-height) auto var(--Footer-height);
   height: 100%;
@@ -16,6 +15,9 @@
 
 @media (min-width: 768px) {
   .Layout {
+    background-attachment: fixed;
+    background-size: cover;
     background-image: url("/images/compass-background.jpg");
+    background-repeat: no-repeat;
   }
 }
