@@ -12,8 +12,6 @@
 }
 
 @media (min-width: 768px) {
-
-  
   .Layout-navbar {
     padding: 1rem calc(1rem * 100 / 100);
   }
