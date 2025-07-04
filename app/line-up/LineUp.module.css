@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.LineUp-title {
+  background: linear-gradient(90deg, #ff97d6, #f4e816);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
 .LineUp-artists {
   display: grid;
   gap: 1rem;
