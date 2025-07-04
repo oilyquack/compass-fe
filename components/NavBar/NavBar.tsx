@@ -11,14 +11,16 @@ export default function NavBar() {
         <li>
           <ul className={styles["NavBar-list"]}>
             <li>
-              <NextLink href="/line-up">Lineup</NextLink>
+              <NextLink className={styles["NavBar-link"]} href="/line-up">
+                Lineup
+              </NextLink>
             </li>
           </ul>
         </li>
         <li>
           <NextLink href="/">
             <CompassLogo
-              className={styles["NavBar-logo"]}
+              className={styles["NavBar-link"]}
               width={242}
               height={113}
             />
