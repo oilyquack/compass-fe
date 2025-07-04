@@ -1,19 +1,26 @@
+import type { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
+import Image from "next/image";
+
 import Footer from "@/components/Footer";
+import MusicPlayer from "@/components/MusicPlayer/MusicPlayer";
 import NavBar from "@/components/NavBar";
 import Section from "@/components/Section";
-import MusicPlayer from "@/components/MusicPlayer/MusicPlayer";
 import SocialLinks from "@/components/SocialLinks/SocialLinks";
 import artists from "@/data/artists.json";
 import { ArtistInterface } from "@/interfaces/artist.interface";
+
 import styles from "./Artist.module.css";
-import Image from "next/image";
-import type { GetStaticPaths, GetStaticProps } from "next";
 
 import "@/styles/globals.css";
 
 export default function ArtistPage({ artist }: { artist: ArtistInterface }) {
   return (
     <div className={styles.Layout}>
+      <Head>
+        <title>{artist.name} | Compass Festival</title>
+        <meta name="description" content={artist.bio} />
+      </Head>
       <Section>
         <NavBar />
       </Section>
