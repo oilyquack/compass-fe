@@ -11,6 +11,10 @@
   width: 100vw;
 }
 
+.Layout-navbar {
+  padding: 0 calc(1rem * 100 / 100);
+}
+
 @media (min-width: 768px) {
   .Layout {
     background-attachment: fixed;
@@ -18,8 +22,8 @@
     background-image: url("/images/compass-background.jpg");
     background-repeat: no-repeat;
   }
-}
-
-.Layout-navbar {
-  padding: 1rem calc(1rem * 100 / 100);
+  
+  .Layout-navbar {
+    padding: 1rem calc(1rem * 100 / 100);
+  }
 }

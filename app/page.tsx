@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import MusicPlayer from "@/components/MusicPlayer";
 import Section from "@/components/Section";
 
 import styles from "./Home.module.css";
@@ -41,6 +42,7 @@ export default function Home() {
         <p className="font-size-sm mg-btm-lg">
           Tickets and more info coming soon
         </p>
+        <MusicPlayer embedString="<iframe style='border-radius:12px' src='https://open.spotify.com/embed/playlist/32AoxMwYCLeQ697aoznPyi?utm_source=generator&theme=0' width='100%' height='152' frameBorder='0' allowfullscreen='' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>" />
       </div>
     </Section>
   );

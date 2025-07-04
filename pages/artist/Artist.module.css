@@ -8,8 +8,17 @@
 }
 
 .Layout-navbar {
-  padding: 1rem calc(1rem * 100 / 100);;
+  padding: 0 calc(1rem * 100 / 100);
 }
+
+@media (min-width: 768px) {
+
+  
+  .Layout-navbar {
+    padding: 1rem calc(1rem * 100 / 100);
+  }
+}
+
 
 .Artist {
   align-items: start;

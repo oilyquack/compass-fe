@@ -3,6 +3,8 @@
   display: grid;
   grid-template-areas: '. home button';
   grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr;
+  height: var(--NavBar-height);
   width: 100%;
 }
 
@@ -108,7 +110,6 @@
     grid-template-areas: 'links home cta';
     align-items: center;
     width: 100%;
-    height: auto;
     gap: 0;
     background: none;
   }
