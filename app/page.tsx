@@ -39,7 +39,7 @@ export default function Home() {
         </div>
 
         <p className="font-size-sm mg-btm-lg">
-          Full website & lineup coming soon
+          Tickets and more info coming soon
         </p>
       </div>
     </Section>
