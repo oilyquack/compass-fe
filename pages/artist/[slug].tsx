@@ -49,7 +49,7 @@ export default function ArtistPage({ artist }: { artist: ArtistInterface }) {
             <div className="mg-btm-md">
               <SocialLinks artist={artist} />
             </div>
-            <p className={`${styles["Artist-bio"]} mg-btm-md`}>{artist.bio}</p>
+            <p className={`${styles["Artist-bio"]} mg-btm-lg`}>{artist.bio}</p>
             {artist.embedString ? (
               <MusicPlayer embedString={artist.embedString} />
             ) : null}

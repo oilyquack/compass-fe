@@ -64,14 +64,22 @@ a {
   font-size: 1rem;
 }
 
-.mg-btm-sm {
-  margin-bottom: 8px;
+.mg-btm-xxl {
+  margin-bottom: 64px;
+}
+
+.mg-btm-xl {
+  margin-bottom: 48px;
+}
+
+.mg-btm-lg {
+  margin-bottom: 32px;
 }
 
 .mg-btm-md {
   margin-bottom: 16px;
 }
 
-.mg-btm-lg {
-  margin-bottom: 32px;
+.mg-btm-sm {
+margin-bottom: 8px;
 }
