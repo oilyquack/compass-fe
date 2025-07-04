@@ -1,3 +1,5 @@
+import NextImage from "next/image";
+
 import Button from "@/components/Button";
 import MusicPlayer from "@/components/MusicPlayer";
 import Section from "@/components/Section";
@@ -9,9 +11,11 @@ export default function Home() {
     <Section className={styles.Home}>
       <div className={styles["Home-content"]}>
         <div className={styles["Home-logoWrapper"]}>
-          <img
+          <NextImage
             alt="Compass Logo"
             className={styles["Home-logo"]}
+            height={302}
+            width={580}
             src="/images/compass-logo.png"
           />
         </div>
