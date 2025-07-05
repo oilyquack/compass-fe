@@ -23,7 +23,7 @@
 }
 
 @media (min-width: 768px) {
-  .PageLayout-defaultBackground {
+  .PageLayout--defaultBackground {
     background-attachment: fixed;
     background-size: cover;
     background-image: url("/images/compass-background.jpg");

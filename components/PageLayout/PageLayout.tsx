@@ -14,11 +14,11 @@ export default function PageLayout({
   return (
     <main
       className={`${styles.PageLayout} ${
-        styles[`PageLayout-${background}Background`]
+        styles[`PageLayout--${background}Background`]
       }`}
     >
       <header style={{ position: "relative" }}>
-        <Section className={styles["PageLayout-navbar"]}>
+        <Section>
           <NavBar />
         </Section>
       </header>

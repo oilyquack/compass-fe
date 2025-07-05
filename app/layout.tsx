@@ -54,7 +54,7 @@ export default function RootLayout({
       </head>
 
       <body className={`${montserrat.variable} ${lato.variable}`}>
-        <PageLayout>{children}</PageLayout>
+        <PageLayout background="default">{children}</PageLayout>
       </body>
     </html>
   );
