@@ -39,10 +39,13 @@ export default function ArtistPage({ artist }: { artist: ArtistInterface }) {
             <div className={styles["Artist-content"]}>
               <span className={styles["Artist-worm"]} />
               <h1
-                className={`${styles["Artist-title"]} font-size-xxxl mg-btm-md`}
+                className={`${styles["Artist-title"]} font-size-xxxl mg-btm-sm`}
               >
                 {artist.name}
               </h1>
+
+              <p className="font-family-lato mg-btm-md">{artist.location}</p>
+
               <div className="mg-btm-md">
                 <SocialLinks artist={artist} />
               </div>
