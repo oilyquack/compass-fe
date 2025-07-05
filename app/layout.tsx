@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 import { Lato, Montserrat } from "next/font/google";
 
-import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
-import Section from "@/components/Section";
+import PageLayout from "@/components/PageLayout";
 
 import "@/styles/globals.css";
-import styles from "./layout.module.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -57,15 +54,7 @@ export default function RootLayout({
       </head>
 
       <body className={`${montserrat.variable} ${lato.variable}`}>
-        <main className={styles.Layout}>
-          <header style={{ position: "relative" }}>
-            <Section className={styles["Layout-navbar"]}>
-              <NavBar />
-            </Section>
-          </header>
-          {children}
-          <Footer />
-        </main>
+        <PageLayout>{children}</PageLayout>
       </body>
     </html>
   );

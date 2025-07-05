@@ -1,9 +1,6 @@
-.Layout {
+.PageLayout {
   --Footer-height: 200px;
 
-  background-image: url("/images/compass-background-mob.jpg");
-  background-repeat: repeat-y;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
@@ -11,19 +8,29 @@
   width: 100vw;
 }
 
-.Layout-navbar {
+.PageLayout--defaultBackground {
+  background-image: url("/images/compass-background-mob.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.PageLayout--solidBackground {
+  background-color: var(--color-background);
+}
+
+.PageLayout-navbar {
   padding: 0 calc(1rem * 100 / 100);
 }
 
 @media (min-width: 768px) {
-  .Layout {
+  .PageLayout-defaultBackground {
     background-attachment: fixed;
     background-size: cover;
     background-image: url("/images/compass-background.jpg");
     background-repeat: no-repeat;
   }
   
-  .Layout-navbar {
+  .PageLayout-navbar {
     padding: 1rem calc(1rem * 100 / 100);
   }
 }
