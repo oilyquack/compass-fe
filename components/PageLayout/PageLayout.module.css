@@ -18,9 +18,9 @@
   background-color: var(--color-background);
 }
 
-.PageLayout-navbar {
-  padding: 0 calc(1rem * 100 / 100);
-}
+
+.PageLayout-mainWrapper {
+    flex: 1 0 auto;}
 
 @media (min-width: 768px) {
   .PageLayout--defaultBackground {

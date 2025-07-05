@@ -22,7 +22,7 @@ export default function PageLayout({
           <NavBar />
         </Section>
       </header>
-      {children}
+      <div className={styles["PageLayout-mainWrapper"]}>{children}</div>
       <Footer />
     </main>
   );
