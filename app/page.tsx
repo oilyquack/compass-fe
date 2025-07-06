@@ -15,6 +15,7 @@ export default function Home() {
             alt="Compass Logo"
             className={styles["Home-logo"]}
             height={302}
+            priority
             width={580}
             src="/images/compass-logo.png"
           />
