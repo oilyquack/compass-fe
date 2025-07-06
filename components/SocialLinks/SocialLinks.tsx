@@ -11,7 +11,12 @@ export default function SocialLinks({ artist }: { artist: ArtistInterface }) {
   return (
     <div className={styles.SocialLinks}>
       {artist.website && (
-        <a href={artist.website} target="_blank" rel="noopener noreferrer">
+        <a
+          aria-label="Website"
+          href={artist.website}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Globe
             className={styles["SocialLinks-icon"]}
             width={48}
@@ -20,7 +25,12 @@ export default function SocialLinks({ artist }: { artist: ArtistInterface }) {
         </a>
       )}
       {artist.facebook && (
-        <a href={artist.facebook} target="_blank" rel="noopener noreferrer">
+        <a
+          aria-label="Facebook"
+          href={artist.facebook}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Facebook
             className={styles["SocialLinks-icon"]}
             width={48}
@@ -29,7 +39,12 @@ export default function SocialLinks({ artist }: { artist: ArtistInterface }) {
         </a>
       )}
       {artist.instagram && (
-        <a href={artist.instagram} target="_blank" rel="noopener noreferrer">
+        <a
+          aria-label="Instagram"
+          href={artist.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Instagram
             className={styles["SocialLinks-icon"]}
             width={48}
@@ -38,7 +53,12 @@ export default function SocialLinks({ artist }: { artist: ArtistInterface }) {
         </a>
       )}
       {artist.tiktok && (
-        <a href={artist.tiktok} target="_blank" rel="noopener noreferrer">
+        <a
+          aria-label="TikTok"
+          href={artist.tiktok}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <TikTok
             className={styles["SocialLinks-icon"]}
             width={48}
@@ -47,7 +67,12 @@ export default function SocialLinks({ artist }: { artist: ArtistInterface }) {
         </a>
       )}
       {artist.spotify && (
-        <a href={artist.spotify} target="_blank" rel="noopener noreferrer">
+        <a
+          aria-label="Spotify"
+          href={artist.spotify}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Spotify
             className={styles["SocialLinks-icon"]}
             width={48}

@@ -35,7 +35,7 @@ export default function NavBar() {
     <FocusTrap active={isOpen}>
       <nav className={styles.NavBar}>
         {pathname !== "/" ? (
-          <NextLink href="/" style={{ gridArea: "home" }}>
+          <NextLink aria-label="Home" href="/" style={{ gridArea: "home" }}>
             <CompassLogo
               className={`${styles["NavBar-link"]} ${styles["NavBar-logo"]}`}
             />
@@ -54,6 +54,7 @@ export default function NavBar() {
         <button
           aria-expanded={isOpen}
           aria-haspopup="true"
+          aria-label="Toggle navigation"
           className={styles["NavBar-button"]}
           onClick={() => setIsOpen((b) => !b)}
           type="button"
