@@ -25,7 +25,7 @@ export default function ArtistPage({ artist }: { artist: ArtistInterface }) {
           <div className={styles.Artist}>
             <div className={styles["Artist-imageOuterWrapper"]}>
               <span className={styles["Artist-star"]} />
-              <div className={`${styles["Artist-imageWrapper"]} mg-btm-lg`}>
+              <div className={`${styles["Artist-imageWrapper"]} mg-btm-xl`}>
                 <Image
                   alt={artist.name}
                   className={styles["Artist-image"]}
