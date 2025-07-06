@@ -1,4 +1,5 @@
 "use client";
+import { FocusTrap } from "focus-trap-react";
 import { usePathname } from "next/navigation";
 import NextLink from "next/link";
 import { useEffect, useState } from "react";
@@ -31,35 +32,37 @@ export default function NavBar() {
   }, [isOpen]);
 
   return (
-    <nav className={styles.NavBar}>
-      {pathname !== "/" ? (
-        <NextLink href="/" style={{ gridArea: "home" }}>
-          <CompassLogo
-            className={`${styles["NavBar-link"]} ${styles["NavBar-logo"]}`}
-          />
-        </NextLink>
-      ) : null}
-      <ul aria-hidden={!isOpen} className={styles["NavBar-list"]}>
-        <li>
-          <NextLink className={styles["NavBar-link"]} href="/line-up">
-            Lineup
+    <FocusTrap active={isOpen}>
+      <nav className={styles.NavBar}>
+        {pathname !== "/" ? (
+          <NextLink href="/" style={{ gridArea: "home" }}>
+            <CompassLogo
+              className={`${styles["NavBar-link"]} ${styles["NavBar-logo"]}`}
+            />
           </NextLink>
-        </li>
-      </ul>
-      <ul className={styles["NavBar-cta"]}>
-        <li></li>
-      </ul>
-      <button
-        aria-expanded={isOpen}
-        aria-haspopup="true"
-        className={styles["NavBar-button"]}
-        onClick={() => setIsOpen((b) => !b)}
-        type="button"
-      >
-        <span />
-        <span />
-        <span />
-      </button>
-    </nav>
+        ) : null}
+        <ul aria-hidden={!isOpen} className={styles["NavBar-list"]}>
+          <li>
+            <NextLink className={styles["NavBar-link"]} href="/line-up">
+              Lineup
+            </NextLink>
+          </li>
+        </ul>
+        <ul className={styles["NavBar-cta"]}>
+          <li></li>
+        </ul>
+        <button
+          aria-expanded={isOpen}
+          aria-haspopup="true"
+          className={styles["NavBar-button"]}
+          onClick={() => setIsOpen((b) => !b)}
+          type="button"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </nav>
+    </FocusTrap>
   );
 }
