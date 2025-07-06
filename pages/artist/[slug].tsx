@@ -30,6 +30,7 @@ export default function ArtistPage({ artist }: { artist: ArtistInterface }) {
                   alt={artist.name}
                   className={styles["Artist-image"]}
                   fill
+                  priority
                   src={`/images/artists/${artist.slug}/main.jpg`}
                   style={{ objectFit: "cover" }}
                 />
