@@ -31,6 +31,7 @@ export default function ArtistPage({ artist }: { artist: ArtistInterface }) {
                   className={styles["Artist-image"]}
                   fill
                   priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   src={`/images/artists/${artist.slug}/main.jpg`}
                   style={{ objectFit: "cover" }}
                 />
