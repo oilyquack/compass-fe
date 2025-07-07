@@ -12,6 +12,7 @@ export default function Artist({ artist }: { artist: ArtistInterface }) {
           alt={artist.name}
           className={styles["Artist-image"]}
           fill
+          sizes="(max-width: 768px) 100vw, 615px"
           src={`/images/artists/${artist.slug}/grid.jpg`}
           style={{ objectFit: "cover" }}
         />
