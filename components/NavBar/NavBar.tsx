@@ -47,6 +47,11 @@ export default function NavBar() {
               Lineup
             </NextLink>
           </li>
+          <li>
+            <NextLink className={styles["NavBar-link"]} href="/apply">
+              Apply
+            </NextLink>
+          </li>
         </ul>
         <ul className={styles["NavBar-cta"]}>
           <li></li>
