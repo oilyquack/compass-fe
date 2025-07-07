@@ -34,10 +34,6 @@ export default function Home() {
           <Button href="/line-up">Lineup</Button>
         </div>
 
-        <div className="mg-btm-lg">
-          <Button href="/apply">Apply to play</Button>
-        </div>
-
         <p className="font-size-sm mg-btm-lg">
           Tickets and more info coming soon
         </p>
