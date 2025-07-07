@@ -35,13 +35,7 @@ export default function Home() {
         </div>
 
         <div className="mg-btm-lg">
-          <Button
-            destination="outbound"
-            href="https://docs.google.com/forms/d/e/1FAIpQLScmHxSjH-NEGxdbWG3dpiMRMtDGJWc0MdyUE8w3oE-9sadRxQ/viewform?usp=dialog"
-            target="_blank"
-          >
-            Apply to play
-          </Button>
+          <Button href="/apply">Apply to play</Button>
         </div>
 
         <p className="font-size-sm mg-btm-lg">
