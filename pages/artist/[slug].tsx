@@ -77,5 +77,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const artist = artists.find((a) => a.slug === slug) || null;
   return {
     props: { artist },
+    revalidate: 86400, // 24 hours in seconds
   };
 };
