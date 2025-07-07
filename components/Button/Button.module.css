@@ -13,6 +13,11 @@
   overflow: hidden;
 }
 
+.Button span {
+  position: relative;
+  z-index: 1;
+}
+
 .Button::before {
   content: "";
   position: absolute;
@@ -29,12 +34,19 @@
   mask-composite: exclude;
 }
 
-.Button:hover,
-.Button:focus {
-  background: #ff97d6;
+.Button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 40px;
+  z-index: 0;
+  background: linear-gradient(90deg, #f4e816, #ff97d6);
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
 }
 
-.Button:hover,
-.Button:focus::before {
-  background: #ff97d6;
+.Button:hover::after,
+.Button:focus::after {
+  opacity: 1;
 }

@@ -34,7 +34,7 @@ export default function Button({
           href={href}
           {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
         >
-          {children} &gt;
+          <span>{children} &gt;</span>
         </a>
       );
     }
@@ -45,7 +45,7 @@ export default function Button({
         href={href}
         {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
       >
-        {children} &gt;
+        <span>{children} &gt;</span>
       </Link>
     );
   }
