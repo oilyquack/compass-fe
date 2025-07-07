@@ -8,10 +8,10 @@ export default function ApplyPage() {
         Applications closed for this year on{" "}
         <time dateTime="2025-07-07">7th&nbsp;July&nbsp;2025</time>
       </h1>
-      <p className="font-size-lg mg-btm-md">
+      <p className="font-family-lato font-size-lg mg-btm-md">
         We were proud to receive 359 applications!
       </p>
-      <p className="font-size-lg">
+      <p className="font-family-lato font-size-lg">
         Come back after the festival for 2026 applications
       </p>
     </Section>
