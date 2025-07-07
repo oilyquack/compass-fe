@@ -9,7 +9,7 @@ export default function Artist({ artist }: { artist: ArtistInterface }) {
     <div className={styles.Artist}>
       <div className={styles["Artist-imageWrapper"]}>
         <NextImage
-          alt={artist.name}
+          alt=""
           className={styles["Artist-image"]}
           fill
           sizes="(max-width: 768px) 100vw, 615px"
