@@ -3,7 +3,7 @@
   --foreground: #171717;
   --font-family: var(--font-montserrat); /* Add the font variable */
   
-  --Footer-height: 200px;
+  --Footer-height: 280px;
   --NavBar-height: 92px;
 
   --color-primary: #396cdf;
@@ -12,6 +12,7 @@
 @media (min-width: 768px) {
   :root {
     --NavBar-height: 145px;
+    --FooterHeight: 280px;
   }
 }
 
