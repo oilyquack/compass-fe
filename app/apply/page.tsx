@@ -9,7 +9,7 @@ export default function ApplyPage() {
         <time dateTime="2025-07-07">7th July 2025</time>
       </h1>
       <p className="font-size-lg mg-btm-md">
-        We were chuffed to receive 359 applications!
+        We were proud to receive 359 applications!
       </p>
       <p className="font-size-lg">
         Come back after the festival for 2026 applications
