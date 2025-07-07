@@ -18,9 +18,13 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Compass Music",
   description:
     "A celebration of grassroots music, independent artists & community by the sea in Folkestone, Kent.",
+  openGraph: {
+    siteName: "Compass Music",
+    title: "Compass Music",
+  },
+  title: "Compass Music",
 };
 
 export default function RootLayout({
