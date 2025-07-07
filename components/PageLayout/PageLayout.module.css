@@ -11,7 +11,7 @@
 .PageLayout--defaultBackground {
   background-image: url("/images/compass-background-mob.jpg");
   background-repeat: repeat-y;
-  background-size: cover;
+  background-size: contain;
 }
 
 .PageLayout--solidBackground {
