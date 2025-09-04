@@ -23,8 +23,6 @@ export default function Home() {
 
         <time className="font-size-xl mg-btm-md">17th - 18th October 2025</time>
 
-        <p className="font-size-lg mg-btm-md">Save the date</p>
-
         <p className="font-size-md mg-btm-lg">
           A celebration of grassroots music, independent artists & community by
           the sea in Folkestone, Kent.
@@ -34,9 +32,10 @@ export default function Home() {
           <Button href="/line-up">Lineup</Button>
         </div>
 
-        <p className="font-size-sm mg-btm-lg">
-          Tickets and more info coming soon
-        </p>
+        <div className="mg-btm-md">
+          <Button href="/tickets">Tickets</Button>
+        </div>
+
         <MusicPlayer embedString="<iframe style='border-radius:12px' src='https://open.spotify.com/embed/playlist/32AoxMwYCLeQ697aoznPyi?utm_source=generator&theme=0' width='100%' height='152' frameBorder='0' allowfullscreen='' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>" />
       </div>
     </Section>
