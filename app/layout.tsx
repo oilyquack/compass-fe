@@ -13,7 +13,7 @@ const montserrat = Montserrat({
 
 const lato = Lato({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "900"],
   variable: "--font-lato",
 });
 
