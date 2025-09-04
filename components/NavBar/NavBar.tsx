@@ -57,6 +57,11 @@ export default function NavBar() {
               Tickets
             </NextLink>
           </li>
+          <li>
+            <NextLink className={styles["NavBar-link"]} href="/faqs">
+              FAQs
+            </NextLink>
+          </li>
         </ul>
         <ul className={styles["NavBar-cta"]}>
           <li></li>
