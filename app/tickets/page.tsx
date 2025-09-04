@@ -4,6 +4,8 @@ import { useEffect } from "react";
 
 import Section from "@/components/Section";
 
+import styles from "./TicketsPage.module.css";
+
 export default function TicketsPage() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -16,58 +18,68 @@ export default function TicketsPage() {
 
   return (
     <Section>
-      <p className="font-family-lato font-size-md mg-btm-lg">
-        Join us 17–18 October 2025 for a weekend of unmissable new music, live
-        across eight quirky independent venues in Folkestone’s Creative Quarter.
-        Affordable day and two-day passes available, with{" "}
-        <b>
-          concessions for under-25s, students, and low-income attendees.
-          Festival Support/Pay-it-forward tickets support the festival and wider
-          C.I.C
-        </b>
-        , and allow us to add more low income tickets for our local community so
-        that no one is excluded from live music. Affordable, accessible, and
-        transparent: one wristband gives you access to all venues (subject to
-        capacity) on your chosen day (Friday or Saturday), or get a 2-days pass
-        for access on both days with a 30% discount compared to day prices!
-      </p>
-      <p className="font-family-lato font-size-md mg-btm-lg">Ticket options</p>
-      <ul
-        className="font-family-lato font-size-md mg-btm-lg"
-        style={{ margin: "1em 0" }}
-      >
-        <li>
-          <b>Low Income (limited availability):</b> Friday £5 / Saturday £10 /
-          Weekend £11.90
-        </li>
-        <li>
-          <b>Student / Under 25 (limited availability):</b> Friday £10 /
-          Saturday £15 / Weekend £17.50
-        </li>
-        <li>
-          <b>Super Early Bird (until 5th Sept only):</b> Friday £12 / Saturday
-          £17 / Weekend £20.30
-        </li>
-        <li>
-          <b>Early Bird (until 17th Sept):</b> Friday £15 / Saturday £20 /
-          Weekend £24.50
-        </li>
-        <li>
-          <b>Standard:</b> Friday £18 / Saturday £23 / Weekend £28.70
-        </li>
-        <li>
-          <b>On The Door (if not sold out!):</b> Friday £20 / Saturday £25 /
-          Weekend £33
-        </li>
-        <li>
-          <b>Festival Supporter/Pay-It-Forward:</b> Friday £20 / Saturday £25 /
-          Weekend £33 (allowing us to add an extra low income ticket in our
-          allocation for the community)
-        </li>
-      </ul>
-      <p className="font-family-lato font-size-md mg-btm-lg">
-        All prices are excluding of booking fees charged by ticketing platforms.
-      </p>
+      <div className={`mg-btm-xxl ${styles["TicketsPage-intro"]}`}>
+        <div className="TicketsPage-intro-content">
+          <h1 className="font-size-lg mg-btm-sm">
+            Join us 17–18 October 2025 for a weekend of unmissable new music,
+            live across eight quirky independent venues in Folkestone’s Creative
+            Quarter.
+          </h1>
+          <br />
+          <p className="font-family-lato font-size-sm mg-btm-lg">
+            Affordable day and two-day passes available, with{" "}
+            <b>
+              concessions for under-25s, students, and low-income attendees.
+              Festival Support/Pay-it-forward tickets support the festival and
+              wider C.I.C
+            </b>
+            , and allow us to add more low income tickets for our local
+            community so that no one is excluded from live music. Affordable,
+            accessible, and transparent: one wristband gives you access to all
+            venues (subject to capacity) on your chosen day (Friday or
+            Saturday), or get a 2-days pass for access on both days with a 30%
+            discount compared to day prices!
+          </p>
+          <h2 className="font-size-sm mg-btm-sm">TICKET OPTIONS</h2>
+          <ul
+            className={`font-family-lato font-size-md mg-btm-lg ${styles["TicketsPage-list"]}`}
+          >
+            <li className="font-family-lato font-size-sm mg-btm-xs">
+              <b>Low Income (limited availability):</b> Friday £5 / Saturday £10
+              / Weekend £11.90
+            </li>
+            <li className="font-family-lato font-size-sm mg-btm-xs">
+              <b>Student / Under 25 (limited availability):</b> Friday £10 /
+              Saturday £15 / Weekend £17.50
+            </li>
+            <li className="font-family-lato font-size-sm mg-btm-xs">
+              <b>Super Early Bird (until 5th Sept only):</b> Friday £12 /
+              Saturday £17 / Weekend £20.30
+            </li>
+            <li className="font-family-lato font-size-sm mg-btm-xs">
+              <b>Early Bird (until 17th Sept):</b> Friday £15 / Saturday £20 /
+              Weekend £24.50
+            </li>
+            <li className="font-family-lato font-size-sm mg-btm-xs">
+              <b>Standard:</b> Friday £18 / Saturday £23 / Weekend £28.70
+            </li>
+            <li className="font-family-lato font-size-sm mg-btm-xs">
+              <b>On The Door (if not sold out!):</b> Friday £20 / Saturday £25 /
+              Weekend £33
+            </li>
+            <li className="font-family-lato font-size-sm mg-btm-xs">
+              <b>Festival Supporter/Pay-It-Forward:</b> Friday £20 / Saturday
+              £25 / Weekend £33 (allowing us to add an extra low income ticket
+              in our allocation for the community)
+            </li>
+          </ul>
+          <i className="font-family-lato font-size-sm">
+            All prices are excluding of booking fees charged by ticketing
+            platforms.
+          </i>
+        </div>
+      </div>
+
       <div
         id="ticketbox_ph_41322750"
         dangerouslySetInnerHTML={{

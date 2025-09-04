@@ -93,6 +93,10 @@ a {
 margin-bottom: 8px;
 }
 
+.mg-btm-xs {
+  margin-bottom: 4px;
+}
+
 .font-family-lato {
   font-family: "Lato", Arial, Helvetica, sans-serif;
 }

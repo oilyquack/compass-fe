@@ -1,0 +1,41 @@
+.TicketsPage-intro {
+  position: relative;
+  background-color: #fff;
+  border-radius: 18px;
+  color: #396cdf;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 24px;
+  z-index: 1;
+  border: none;
+}
+
+.TicketsPage-intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  pointer-events: none;
+  z-index: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #f4e816, #ff97d6);
+}
+
+.TicketsPage-intro > * {
+  position: relative;
+  border-radius: 6px;
+  z-index: 1;
+  padding: 1em;
+  background-color: #fff;
+}
+
+/* Add an inner wrapper for content with a white background and matching border-radius */
+.TicketsPage-intro-content {
+  z-index: 1;
+}
+
+.TicketsPage-list {
+    margin: 1em 1em;
+    columns: 2;
+}
