@@ -65,7 +65,7 @@ export default function AboutPage() {
               <b>Cecily Snowball</b> — PR and Partnerships
             </li>
             <li className="mg-btm-xs">
-              <b>Yuman Kumran</b> — Marketing
+              <b>Yumna Kumran</b> — Marketing
             </li>
             <li className="mg-btm-xs">
               <b>Eiana Sanchez-Magner</b> — Social Media
