@@ -1,8 +1,8 @@
 .TicketsPage-intro {
   position: relative;
-  background-color: #fff;
+  background-color: #396cdf;
   border-radius: 32px;
-  color: #396cdf;
+  color: #fff;
   font-size: 16px;
   font-weight: normal;
   overflow: hidden;
@@ -27,7 +27,7 @@
   border-radius: 12px;
   z-index: 1;
   padding: 2em;
-  background-color: #fff;
+  background-color: #396cdf;
 }
 
 /* Add an inner wrapper for content with a white background and matching border-radius */
