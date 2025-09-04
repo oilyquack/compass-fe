@@ -62,6 +62,11 @@ export default function NavBar() {
               FAQs
             </NextLink>
           </li>
+          <li>
+            <NextLink className={styles["NavBar-link"]} href="/about">
+              About
+            </NextLink>
+          </li>
         </ul>
         <ul className={styles["NavBar-cta"]}>
           <li></li>

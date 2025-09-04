@@ -39,7 +39,7 @@
   transform: rotate(-45deg) translateY(75%);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .NavBar-button {
     display: none;
   }
@@ -103,7 +103,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .NavBar {
     display: grid;
     grid-template-areas: "links home cta";
