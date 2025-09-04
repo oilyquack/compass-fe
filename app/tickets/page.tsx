@@ -31,9 +31,7 @@ export default function TicketsPage() {
         capacity) on your chosen day (Friday or Saturday), or get a 2-days pass
         for access on both days with a 30% discount compared to day prices!
       </p>
-      <p className="font-family-lato font-size-md mg-btm-lg">
-        Ticket options Low Income (limited availability):
-      </p>
+      <p className="font-family-lato font-size-md mg-btm-lg">Ticket options</p>
       <ul
         className="font-family-lato font-size-md mg-btm-lg"
         style={{ margin: "1em 0" }}
