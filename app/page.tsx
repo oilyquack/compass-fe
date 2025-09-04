@@ -21,7 +21,7 @@ export default function Home() {
           />
         </div>
 
-        <time className="font-size-xl mg-btm-md">17th - 19th October 2025</time>
+        <time className="font-size-xl mg-btm-md">17th - 18th October 2025</time>
 
         <p className="font-size-lg mg-btm-md">Save the date</p>
 

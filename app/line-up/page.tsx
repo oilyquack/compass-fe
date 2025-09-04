@@ -9,7 +9,7 @@ import styles from "./LineUp.module.css";
 export default function LineUpPage() {
   return (
     <Section className={styles.LineUp}>
-      <time className="font-size-md mg-btm-md">17th - 19th October 2025</time>
+      <time className="font-size-md mg-btm-md">17th - 18th October 2025</time>
 
       <p className="font-family-lato font-size-sm mg-btm-lg">
         A celebration of grassroots music, independent artists & community by
