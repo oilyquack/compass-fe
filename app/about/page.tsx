@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner";
 import Section from "@/components/Section";
 
 import styles from "./About.module.css";
@@ -6,7 +7,7 @@ export default function AboutPage() {
   return (
     <Section>
       <div className={`${styles.About} font-family-lato`}>
-        <section className="mg-btm-lg">
+        <Banner className="mg-btm-lg">
           <h1 className="mg-btm-md">What is Compass Festival?</h1>
           <p className="mg-btm-sm">
             Compass Festival is Folkestone’s alternative, independent music
@@ -85,9 +86,9 @@ export default function AboutPage() {
               needed to create a better future.
             </strong>
           </p>
-        </section>
+        </Banner>
 
-        <section className="mg-btm-lg">
+        <Banner className="mg-btm-lg">
           <h2 className="mg-btm-md">Our Mission + Vision</h2>
           <p className="mg-btm-sm">
             At Compass Festival, we believe independent music is more than
@@ -105,9 +106,9 @@ export default function AboutPage() {
             inclusivity, gender balance, and an unshakeable love for the DIY and
             grassroots scene.
           </p>
-        </section>
+        </Banner>
 
-        <section className="mg-btm-lg">
+        <Banner className="mg-btm-lg">
           <h2 className="mg-btm-md">Why Folkestone?</h2>
           <p className="mg-btm-sm">
             Folkestone is a small seaside fishing town with a big creative
@@ -127,9 +128,9 @@ export default function AboutPage() {
             London, Folkestone is the perfect home for a festival dedicated to
             discovery, human connection, and grassroots culture.
           </p>
-        </section>
+        </Banner>
 
-        <section className="mg-btm-lg">
+        <Banner className="mg-btm-lg">
           <h2 className="mg-btm-md">About Compass Music C.I.C</h2>
           <p className="mg-btm-sm">
             Compass Music C.I.C. is a grassroots festival and music development
@@ -165,9 +166,9 @@ export default function AboutPage() {
             touring circuit — and to inspire the next generation of musicians,
             producers, promoters, engineers and label founders.
           </p>
-        </section>
+        </Banner>
 
-        <section className="mg-btm-lg">
+        <Banner className="mg-btm-lg">
           <h3 className="mg-btm-md">Current Projects</h3>
           <ul>
             <li className="mg-btm-sm">
@@ -192,7 +193,7 @@ export default function AboutPage() {
               happen at a grassroots level.
             </strong>
           </p>
-        </section>
+        </Banner>
       </div>
     </Section>
   );

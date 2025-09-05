@@ -1,0 +1,36 @@
+.Banner {
+  position: relative;
+  background-color: #396cdf;
+  border-radius: 32px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 24px;
+  z-index: 1;
+  border: none;
+}
+
+.Banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 32px;
+  pointer-events: none;
+  z-index: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #f4e816, #ff97d6);
+}
+
+.Banner > * {
+  position: relative;
+  border-radius: 12px;
+  z-index: 1;
+  padding: 2em;
+  background-color: #396cdf;
+}
+
+/* Add an inner wrapper for content with a white background and matching border-radius */
+.Banner-content {
+  z-index: 1;
+}
