@@ -68,7 +68,7 @@ export default function AboutPage() {
               <b>Yumna Kumran</b> — Marketing
             </li>
             <li className="mg-btm-xs">
-              <b>Eiana Sanchez-Magner</b> — Social Media
+              <b>Eliana Sanchez-Magner</b> — Social Media
             </li>
             <li className="mg-btm-xs">15+ volunteers helping run the event</li>
           </ul>
