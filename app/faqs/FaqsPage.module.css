@@ -7,3 +7,25 @@
     margin-bottom: 1.5rem;
     font-weight: normal;
 }
+
+.FaqsPage-question,
+.FaqsPage-answer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.FaqsPage-question::before,
+.FaqsPage-answer::before {
+    flex-shrink: 0;
+    margin-right: 0.5em; 
+    min-width: 2ch;
+}
+
+.FaqsPage-question::before {
+    content: "Q: ";
+}
+
+.FaqsPage-answer::before {
+    content: "A: ";
+    font-weight: bold;
+}
