@@ -1,31 +1,42 @@
 .FaqsPage > dt {
-    font-weight: bold;
-    margin-bottom: 0.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 
 .FaqsPage > dd {
-    margin-bottom: 1.5rem;
-    font-weight: normal;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+}
+
+.FaqsPage-title {
+  background: linear-gradient(90deg, #ff97d6, #f4e816);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
 }
 
 .FaqsPage-question,
 .FaqsPage-answer {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 .FaqsPage-question::before,
 .FaqsPage-answer::before {
-    flex-shrink: 0;
-    margin-right: 0.5em; 
-    min-width: 2ch;
+  flex-shrink: 0;
+  margin-right: 0.5em;
+  min-width: 2ch;
 }
 
 .FaqsPage-question::before {
-    content: "Q: ";
+  content: "Q: ";
 }
 
 .FaqsPage-answer::before {
-    content: "A: ";
-    font-weight: bold;
+  content: "A: ";
+  font-weight: bold;
 }
