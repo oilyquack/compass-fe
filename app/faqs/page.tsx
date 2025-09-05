@@ -21,8 +21,8 @@ function Answer({ children }: { children: React.ReactNode }) {
 
 export default function FaqsPage() {
   return (
-    <Section>
-      <h1 className={`${styles["FaqsPage-title"]} mg-btm-lg`}>FAQs</h1>
+    <Section className={styles.FaqsPage}>
+      <h1 className={styles["FaqsPage-title"]}>FAQs</h1>
 
       <dl className={`font-family-lato ${styles.FaqsPage}`}>
         <Banner className="mg-btm-lg">

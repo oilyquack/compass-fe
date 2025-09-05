@@ -1,3 +1,7 @@
+.FaqsPage {
+  text-align: center;
+}
+
 .FaqsPage > dt {
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -16,13 +20,14 @@
   color: transparent;
   display: inline-block;
   text-align: center;
-  width: 100%;
+  margin: 0 0 1em auto;
 }
 
 .FaqsPage-question,
 .FaqsPage-answer {
-  display: flex;
   align-items: flex-start;
+  display: flex;
+  text-align: left;
 }
 
 .FaqsPage-question::before,
