@@ -5,7 +5,7 @@ import styles from "./FaqsPage.module.css";
 
 function Question({ children }: { children: React.ReactNode }) {
   return (
-    <dt className={`${styles["FaqsPage-question"]} font-weight-bold`}>
+    <dt className={`${styles["FaqsPage-question"]}`}>
       <div>{children}</div>
     </dt>
   );
