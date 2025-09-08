@@ -1,5 +1,10 @@
 import NextImage from "next/image";
 
+import Facebook from "@/assets/Facebook";
+import Instagram from "@/assets/Instagram";
+import LinkedIn from "@/assets/LinkedIn";
+import Threads from "@/assets/Threads";
+import TikTok from "@/assets/TikTok";
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 
@@ -26,9 +31,9 @@ export default function Footer() {
               Q60,60 120,40
               Q180,20 240,40
               Q300,60 360,40
-              Q420,20 480,40
+              Q420,20 440,40
               Q540,60 600,40
-              Q660,20 720,40
+              Q440,20 720,40
               Q780,60 840,40
               Q900,20 960,40
               Q1020,60 1080,40
@@ -46,20 +51,89 @@ export default function Footer() {
             Join the mailing list
           </Button>
         </div>
-        <div className={`${styles["Footer-logos"]} mg-btm-lg`}>
-          <NextImage
-            alt="Creative Folkestone"
-            src="/assets/creative-folkestone.png"
-            width={191}
-            height={55}
-          />
+        <div className={styles["Footer-bottom"]}>
+          <ul className={`${styles["Footer-socials"]} mg-btm-lg`}>
+            <li>
+              <a
+                href="https://www.facebook.com/compassmusiccic"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Facebook
+                  className={styles["Footer-socialIcon"]}
+                  width={44}
+                  height={44}
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/compass_music_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram
+                  className={styles["Footer-socialIcon"]}
+                  width={44}
+                  height={44}
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.threads.com/@compass_music_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Threads
+                  className={styles["Footer-socialIcon"]}
+                  width={44}
+                  height={44}
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tiktok.com/@compass_music_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TikTok
+                  className={styles["Footer-socialIcon"]}
+                  width={44}
+                  height={44}
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/compass-music"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkedIn
+                  className={styles["Footer-socialIcon"]}
+                  width={44}
+                  height={44}
+                />
+              </a>
+            </li>
+          </ul>
+          <div className={`${styles["Footer-logos"]} mg-btm-lg`}>
+            <NextImage
+              alt="Creative Folkestone"
+              src="/assets/creative-folkestone.png"
+              width={191}
+              height={55}
+            />
 
-          <NextImage
-            width={88}
-            height={88}
-            alt="Compass Music"
-            src="/assets/compass-music.png"
-          />
+            <NextImage
+              width={88}
+              height={88}
+              alt="Compass Music"
+              src="/assets/compass-music.png"
+            />
+          </div>
         </div>
       </Section>
     </footer>

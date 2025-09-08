@@ -7,6 +7,7 @@
   --NavBar-height: 92px;
 
   --color-primary: #396cdf;
+  --color-primary-hover: #2d54b7;
 }
 
 @media (min-width: 768px) {

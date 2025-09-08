@@ -15,6 +15,40 @@
   line-height: 0;
 }
 
+.Footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 767px) {
+  .Footer-bottom {
+    flex-direction: row;
+  }
+}
+
+.Footer-socials {
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+@media (min-width: 767px) {
+  .Footer-socials {
+    align-items: end;
+  }
+}
+
+
+.Footer-socialIcon {
+  color: var(--color-primary)
+}
+
+.Footer-socialIcon:hover {
+  color: var(--color-primary-hover);
+}
+
 .Footer-logos {
   align-items: center;
   display: flex;
