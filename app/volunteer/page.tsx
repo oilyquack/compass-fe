@@ -125,10 +125,7 @@ export default function VolunteerPage() {
 
           <p className="mg-btm-sm">
             Got questions? Drop us a line at{" "}
-            <a href="mailto:info@compass-music.com">
-              <strong>info@compass-music.com</strong>
-            </a>
-            .
+            <a href="mailto:info@compass-music.com">info@compass-music.com</a>.
           </p>
         </div>
       </div>
