@@ -46,6 +46,10 @@
   pointer-events: none;
 }
 
+.Button:hover, .Button:focus {
+  text-decoration: none;
+}
+
 .Button:hover::after,
 .Button:focus::after {
   opacity: 1;
