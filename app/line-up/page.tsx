@@ -21,7 +21,8 @@ export default function LineUpPage() {
       </h1>
 
       <p className="font-family-lato mg-btm-lg">
-        First confirmed names - many more to come
+        35+ of the finest independent and DIY acts from Kent, Sussex, London and
+        beyond!
       </p>
 
       <ul className={styles["LineUp-artists"]}>
