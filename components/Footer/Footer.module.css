@@ -24,6 +24,7 @@
 @media (min-width: 767px) {
   .Footer-bottom {
     flex-direction: row;
+    margin-bottom: 12px;
   }
 }
 
@@ -32,14 +33,21 @@
   display: flex;
   gap: 1rem;
   list-style: none;
+  margin-bottom: 32px;
 }
 
 @media (min-width: 767px) {
   .Footer-socials {
     align-items: end;
+    margin-bottom: 0;
   }
 }
 
+@media (min-width: 767px) {
+  .Footer-consentPreferences {
+    align-items: center;
+  }
+}
 
 .Footer-socialIcon {
   color: var(--color-primary)
@@ -54,10 +62,14 @@
   display: flex;
   gap: 2rem;
   justify-content: center;
+  margin-bottom: 32px;
+
 }
 
 @media (min-width: 768px) {
   .Footer-logos {
     justify-content: end;
+    margin-bottom: 0;
+
   }
 }

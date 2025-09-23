@@ -52,7 +52,7 @@ export default function Footer() {
           </Button>
         </div>
         <div className={styles["Footer-bottom"]}>
-          <ul className={`${styles["Footer-socials"]} mg-btm-lg`}>
+          <ul className={styles["Footer-socials"]}>
             <li>
               <a
                 href="https://www.facebook.com/compassmusiccic"
@@ -119,7 +119,13 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <div className={`${styles["Footer-logos"]} mg-btm-lg`}>
+          <a
+            href="#"
+            className={`${styles["Footer-consentPreferences"]} termly-display-preferences`}
+          >
+            Consent Preferences
+          </a>
+          <div className={styles["Footer-logos"]}>
             <NextImage
               alt="Creative Folkestone"
               src="/assets/creative-folkestone.png"
