@@ -109,7 +109,7 @@
 }
 
 /* Desktop styles */
-@media (min-width: 968px) {
+@media (min-width: 1200px) {
   .NavBar {
     grid-template-areas: "left logo right";
     grid-template-columns: 1fr auto 1fr;
@@ -128,7 +128,7 @@
 }
 
 /* Mobile styles */
-@media (max-width: 967px) {
+@media (max-width: 1199px) {
   .NavBarListLeft,
   .NavBarListRight {
     display: none !important;

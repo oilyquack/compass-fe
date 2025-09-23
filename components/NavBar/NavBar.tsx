@@ -10,11 +10,13 @@ const leftLinks = [
   { href: "/line-up", label: "Lineup" },
   { href: "/apply", label: "Apply" },
   { href: "/tickets", label: "Tickets" },
+  { href: "/volunteer", label: "Get Involved" },
 ];
 const rightLinks = [
   { href: "/faqs", label: "FAQs" },
   { href: "/about", label: "About" },
-  { href: "/volunteer", label: "Get Involved" },
+  { href: "/cookies", label: "Cookies" },
+  { href: "/privacy", label: "Privacy" },
 ];
 
 export default function NavBar() {
