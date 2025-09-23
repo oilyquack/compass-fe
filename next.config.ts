@@ -1,4 +1,8 @@
-const nextConfig = {
+import type { NextConfig } from 'next';
+import createMDX from '@next/mdx';
+
+const nextConfig: NextConfig = {
+  pageExtensions: ['mdx', 'ts', 'tsx', 'js', 'jsx'],
   webpack(config) {
     // Exclude SVGs from being processed by default file loader
     config.module.rules.push({
@@ -11,4 +15,6 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+const withMDX = createMDX({});
+
+export default withMDX(nextConfig);
