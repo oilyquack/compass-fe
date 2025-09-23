@@ -21,7 +21,7 @@ export function generateStaticParams() {
 }
 
 export default async function ArtistPage({ params }: ArtistPageProps) {
-  const slug = await params.slug;
+  const { slug } = await params;
   const artist = artists.find((a: ArtistInterface) => a.slug === slug) || null;
 
   if (!artist) {
