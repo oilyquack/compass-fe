@@ -3,10 +3,19 @@ import { FocusTrap } from "focus-trap-react";
 import { usePathname } from "next/navigation";
 import NextLink from "next/link";
 import { useEffect, useState } from "react";
-
 import CompassLogo from "@/assets/CompassLogo";
-
 import styles from "./NavBar.module.css";
+
+const leftLinks = [
+  { href: "/line-up", label: "Lineup" },
+  { href: "/apply", label: "Apply" },
+  { href: "/tickets", label: "Tickets" },
+];
+const rightLinks = [
+  { href: "/faqs", label: "FAQs" },
+  { href: "/about", label: "About" },
+  { href: "/volunteer", label: "Get Involved" },
+];
 
 export default function NavBar() {
   const pathname = usePathname();
@@ -24,7 +33,6 @@ export default function NavBar() {
       document.body.style.overflow = "";
       document.documentElement.style.overflow = "";
     }
-
     return () => {
       document.body.style.overflow = "";
       document.documentElement.style.overflow = "";
@@ -34,48 +42,45 @@ export default function NavBar() {
   return (
     <FocusTrap active={isOpen}>
       <nav className={styles.NavBar}>
-        {pathname !== "/" ? (
-          <NextLink aria-label="Home" href="/" style={{ gridArea: "home" }}>
+        <ul className={`${styles.NavBarList} ${styles.NavBarListLeft}`}>
+          {leftLinks.map((link) => (
+            <li key={link.href}>
+              <NextLink className={styles.NavBarLink} href={link.href}>
+                {link.label}
+              </NextLink>
+            </li>
+          ))}
+        </ul>
+
+        {pathname !== "/" && (
+          <NextLink
+            aria-label="Home"
+            href="/"
+            className={styles.NavBarLogoLink}
+          >
             <CompassLogo
-              className={`${styles["NavBar-link"]} ${styles["NavBar-logo"]}`}
+              className={`${styles.NavBarLink} ${styles.NavBarLogo}`}
             />
           </NextLink>
-        ) : null}
-        <ul aria-hidden={!isOpen} className={styles["NavBar-list"]}>
-          <li>
-            <NextLink className={styles["NavBar-link"]} href="/line-up">
-              Lineup
-            </NextLink>
-          </li>
-          <li>
-            <NextLink className={styles["NavBar-link"]} href="/apply">
-              Apply
-            </NextLink>
-          </li>
-          <li>
-            <NextLink className={styles["NavBar-link"]} href="/tickets">
-              Tickets
-            </NextLink>
-          </li>
-          <li>
-            <NextLink className={styles["NavBar-link"]} href="/faqs">
-              FAQs
-            </NextLink>
-          </li>
-          <li>
-            <NextLink className={styles["NavBar-link"]} href="/about">
-              About
-            </NextLink>
-          </li>
+        )}
+
+        {/* Desktop links right */}
+        <ul className={`${styles.NavBarList} ${styles.NavBarListRight}`}>
+          {rightLinks.map((link) => (
+            <li key={link.href}>
+              <NextLink className={styles.NavBarLink} href={link.href}>
+                {link.label}
+              </NextLink>
+            </li>
+          ))}
         </ul>
-        <ul className={styles["NavBar-cta"]}>
-          <li></li>
-        </ul>
+
+        {/* Hamburger button */}
         <button
           aria-expanded={isOpen}
           aria-haspopup="true"
           aria-label="Toggle navigation"
-          className={styles["NavBar-button"]}
+          className={styles.NavBarButton}
           onClick={() => setIsOpen((b) => !b)}
           type="button"
         >
@@ -83,6 +88,27 @@ export default function NavBar() {
           <span />
           <span />
         </button>
+
+        {/* Mobile pop-out menu */}
+        <div
+          className={styles.MobileMenu}
+          aria-hidden={!isOpen}
+          style={{ display: isOpen ? "flex" : "none" }}
+        >
+          <ul className={styles.MobileMenuList}>
+            {[...leftLinks, ...rightLinks].map((link) => (
+              <li key={link.href}>
+                <NextLink
+                  className={styles.NavBarLink}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </NextLink>
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
     </FocusTrap>
   );
