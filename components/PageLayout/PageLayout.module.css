@@ -13,9 +13,8 @@
 }
 
 .PageLayout--solidBackground {
-  background-color: var(--color-background);
+  background-color: var(--color-primary);
 }
-
 
 .PageLayout-mainWrapper {
     flex: 1 0 auto;}

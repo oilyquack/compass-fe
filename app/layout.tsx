@@ -86,7 +86,7 @@ export default function RootLayout({
           ></iframe>
         </noscript>
 
-        <PageLayout background="default">{children}</PageLayout>
+        <PageLayout>{children}</PageLayout>
       </body>
     </html>
   );

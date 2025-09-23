@@ -2,7 +2,6 @@
   background-color: #396cdf;
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
   min-width: 100dvw;
   width: 100vw;
 }
