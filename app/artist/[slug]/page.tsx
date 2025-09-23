@@ -2,7 +2,6 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 import MusicPlayer from "@/components/MusicPlayer/MusicPlayer";
-import PageLayout from "@/components/PageLayout";
 import Section from "@/components/Section";
 import SocialLinks from "@/components/SocialLinks/SocialLinks";
 import artists from "@/data/artists.json";
