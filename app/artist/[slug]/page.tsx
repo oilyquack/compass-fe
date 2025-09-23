@@ -20,9 +20,9 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ArtistPage({ params }: ArtistPageProps) {
-  const artist =
-    artists.find((a: ArtistInterface) => a.slug === params.slug) || null;
+export default async function ArtistPage({ params }: ArtistPageProps) {
+  const slug = await params.slug;
+  const artist = artists.find((a: ArtistInterface) => a.slug === slug) || null;
 
   if (!artist) {
     notFound();

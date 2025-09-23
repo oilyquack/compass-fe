@@ -21,7 +21,6 @@ export default function PageLayout({
   const isSolidBackground =
     pathname === "/mailing-list" || pathname?.startsWith("/artist");
 
-  console.log({ isSolidBackground });
   return (
     <main
       className={`${styles.PageLayout} ${
