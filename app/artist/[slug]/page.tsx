@@ -11,7 +11,7 @@ import styles from "./Artist.module.css";
 import "@/styles/globals.css";
 
 type ArtistPageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export function generateStaticParams() {
