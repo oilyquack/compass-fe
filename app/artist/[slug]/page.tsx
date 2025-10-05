@@ -58,6 +58,14 @@ export default async function ArtistPage({ params }: ArtistPageProps) {
             <div className="mg-btm-md">
               <SocialLinks artist={artist} />
             </div>
+            <time className="font-family-lato mg-btm-sm" dateTime={artist.date}>
+              {new Date(artist.date).toLocaleDateString("en-GB", {
+                weekday: "long",
+                month: "long",
+                day: "numeric",
+              })}
+            </time>
+            <p className="font-family-lato mg-btm-md">{artist.venue}</p>
             <p className={`${styles["Artist-bio"]} mg-btm-lg`}>{artist.bio}</p>
             {artist.embedString ? (
               <MusicPlayer embedString={artist.embedString} />

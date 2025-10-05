@@ -116,8 +116,13 @@
   z-index: 1;
 }
 
+.Artist-showDetails {
+  display: flex;
+  gap: 1rem;
+}
+
 .Artist-bio {
-  font-family: var(--font-lato);
+  font-weight: 300;
   line-height: 1.6;
 }
 
