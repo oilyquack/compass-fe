@@ -555,23 +555,6 @@
     "website": "https://pizzaweasel.bandcamp.com/"
   },
   {
-    "date": "2025-10-17",
-    "venue": "Speedway",
-    "bio": "Polite Bureaux formed in Bradford. Broken beat-maker & bass guitarist Joseph Smith set up the band; and after selling music gear to pay for a night of drinking in Brighton, dyslexic Smith started writing a song in the pub that night, on a gas bill envelope - coining the phase ‘Except Your Skint’, which later became the title of his studio album. Polite Bureaux is a high-energy electronic post-punk band known for sharp commentary on modern life. Polite Bureaux is a blistering shot of raw commentary, cutting through the noise with jagged rhythms, booming basslines, and a lyrical style that’s as incisive as it is unapologetic. With live bass, drums, and a fierce vocal presence, they create a visceral soundscape that resonates deeply with audiences. Hailing from the UK’s DIY scene, Joe is joined live on stage by his sister Maya and their friend Viv - they’ve secured a reputation for high-energy performances that blur the lines between rave and protest.",
-    "embedString": "<iframe style='border: 0; width: 100%; height: 120px;' src='https://bandcamp.com/EmbeddedPlayer/album=1886607531/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/' seamless><a href='https://politebureaux.bandcamp.com/album/cunt-monday'>CUNT MONDAY by Polite Bureaux</a></iframe>",
-    "facebook": "https://www.facebook.com/politebureaux/?locale=en_GB",
-    "genre": "Electronic Music (Performed Live! Think dance, electronica, disco, trip-hop, synth-pop etc.)",
-    "instagram": "https://www.instagram.com/politebureaux/",
-    "link": "Polite Bureaux | Spotify",
-    "location": "Brighton",
-    "name": "Polite Bureaux",
-    "slug": "polite-bureaux",
-    "spotify": "https://open.spotify.com/artist/4Xtw6H5N2iwfzi8nw0cS7a",
-    "tiktok": "",
-    "video": "https://www.youtube.com/watch?v=0WZix0FVM10",
-    "website": ""
-  },
-  {
     "date": "2025-10-18",
     "venue": "F51",
     "bio": "Conjuring an introspective, hypnotic swirl of grunge-infused shoegaze and haunting alt-rock, Poppy Rockett draws comparisons to early Radiohead and Hope Sandoval through powerful guitar and melancholic melodies.",
@@ -723,6 +706,23 @@
     "tiktok": "",
     "video": "",
     "website": "https://wolfesunday.bandcamp.com/track/twenty-thousand-leagues"
+  },
+  {
+    "date": "2025-10-17",
+    "venue": "Speedway",
+    "bio": "Brighton-born duo WREX make electro-charged alternative rock to turbocharge heartbeats, snap necks and fill both dancefloors and mosh pits. Shades of punk, nu-metal, pop and trance collide and coalesce but never clash; a wild explosion of riffs and synths that pulls from influences as diverse as While She Sleeps, Faithless and Linkin Park. This is the WREX blueprint: a fierce, all-enveloping wall of sound with little time for music’s outdated boundaries or conventions; creativity, joy and emotion unbound. “WREX is about letting go - It’s a release from everything that’s going on in the world around you, a purge of everything you’re thinking and feeling.”",
+    "embedString": "",
+    "facebook": "",
+    "genre": "Electro-Punk-Rock",
+    "instagram": "https://instagram.com/WeAreWREX",
+    "link": "",
+    "location": "Brighton",
+    "name": "Wrex",
+    "slug": "wrex",
+    "spotify": "",
+    "tiktok": "",
+    "video": "",
+    "website": ""
   },
   {
     "date": "2025-10-18",
