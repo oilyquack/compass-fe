@@ -36,6 +36,13 @@
   }
 }
 
+.Home-imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  margin-bottom: 20px;
+}
+
 .Home-logo {
   height: auto;
   max-width: 100vw;

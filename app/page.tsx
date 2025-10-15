@@ -29,6 +29,17 @@ export default function Home() {
         </p>
 
         <div className="mg-btm-md">
+          <Button
+            destination="outbound"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="/images/Compass_Clash_Finder.jpg"
+          >
+            Clash Finder
+          </Button>
+        </div>
+
+        <div className="mg-btm-md">
           <Button href="/line-up">Lineup</Button>
         </div>
 
