@@ -35,7 +35,7 @@ export default function Home() {
             rel="noopener noreferrer"
             href="/images/Compass_Clash_Finder.jpg"
           >
-            Clash Finder
+            Clashfinder / Schedule
           </Button>
         </div>
 
