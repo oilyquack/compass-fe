@@ -41,7 +41,7 @@ export default function FaqsPage() {
             heart of Folkestone’s Creative Quarter, right in the middle of our
             participating venues!
             <br />
-            Open Fri 17 Oct (12pm–10pm) and Sat 18 Oct (10am–10pm).
+            Open Fri 17 Oct (2pm–10pm) and Sat 18 Oct (11am–10pm).
           </Answer>
         </Banner>
 
