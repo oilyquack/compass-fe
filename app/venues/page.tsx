@@ -12,7 +12,7 @@ export default function VenuesPage() {
           alt="Compass Map"
           className={styles["Venues-image"]}
           fill
-          src="/images/compass-map.jpg"
+          src="/images/compass-venues-map.jpg"
           style={{ objectFit: "cover" }}
         />
       </div>
