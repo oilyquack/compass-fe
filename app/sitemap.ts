@@ -52,6 +52,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://www.compass-music.com/venues',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
     ...artists.map((artist) => ({
         url: `https://www.compass-music.com/artist/${artist.slug}`,
         lastModified: new Date(),
