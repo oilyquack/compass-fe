@@ -1,4 +1,5 @@
 import NextImage from "next/image";
+import NextLink from "next/link";
 
 import Facebook from "@/assets/Facebook";
 import Instagram from "@/assets/Instagram";
@@ -119,12 +120,6 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <a
-            href="#"
-            className={`${styles["Footer-consentPreferences"]} termly-display-preferences`}
-          >
-            Consent Preferences
-          </a>
           <div className={styles["Footer-logos"]}>
             <NextImage
               alt="Creative Folkestone"
@@ -140,6 +135,17 @@ export default function Footer() {
               src="/assets/compass-music.png"
             />
           </div>
+        </div>
+        <div className={styles["Footer-links"]}>
+          <a
+            href="#"
+            className={`${styles["Footer-consentPreferences"]} termly-display-preferences`}
+          >
+            Consent Preferences
+          </a>
+
+          <NextLink href="/apply">Apply</NextLink>
+          <NextLink href="/volunteer">Get Involved</NextLink>
         </div>
       </Section>
     </footer>

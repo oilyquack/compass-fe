@@ -8,14 +8,12 @@ import styles from "./NavBar.module.css";
 
 const leftLinks = [
   { href: "/line-up", label: "Lineup" },
-  { href: "/apply", label: "Apply" },
   { href: "/tickets", label: "Tickets" },
-  { href: "/volunteer", label: "Get Involved" },
+  { href: "/venues", label: "Venues" },
 ];
 const rightLinks = [
-  { href: "/venues", label: "Venues" },
-  { href: "/faqs", label: "FAQs" },
   { href: "/about", label: "About" },
+  { href: "/faqs", label: "FAQs" },
   { href: "/cookies", label: "Cookies" },
   { href: "/privacy", label: "Privacy" },
 ];
