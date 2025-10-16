@@ -13,6 +13,7 @@ const leftLinks = [
   { href: "/volunteer", label: "Get Involved" },
 ];
 const rightLinks = [
+  { href: "/venues", label: "Venues" },
   { href: "/faqs", label: "FAQs" },
   { href: "/about", label: "About" },
   { href: "/cookies", label: "Cookies" },

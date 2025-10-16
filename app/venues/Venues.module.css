@@ -1,0 +1,16 @@
+.Venues {
+    display: flex;
+    justify-content: center;
+}
+
+.Venues-imageWrapper {
+    aspect-ratio: 0.7 / 1;
+    overflow: hidden;
+    position: relative;
+    width: 60%;
+}
+
+.Venues-image {
+    display: block;
+    height: auto;
+}
