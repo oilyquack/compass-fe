@@ -33,7 +33,7 @@ export default function Home() {
             destination="outbound"
             target="_blank"
             rel="noopener noreferrer"
-            href="/images/Compass_Clash_Finder.jpg"
+            href="/images/compass-clash-finder.jpg"
           >
             Clashfinder / Schedule
           </Button>
