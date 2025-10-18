@@ -80,7 +80,7 @@ export default function TicketsPage() {
       </Banner>
 
       <Banner className="mg-btm-lg">
-        <p className="font-family-lato font-size-sm">
+        <p className="font-family-lato font-size-md">
           Tickets no longer available online. Pop down to The Workshop to buy yours.
         </p>
       </Banner>
