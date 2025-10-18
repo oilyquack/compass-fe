@@ -79,8 +79,8 @@ export default function TicketsPage() {
         </i>
       </Banner>
 
-      <Banner>
-        <p className="font-family-lato font-size-sm mg-btm-lg">
+      <Banner className="mg-btm-lg">
+        <p className="font-family-lato font-size-sm">
           Tickets no longer available online. Pop down to The Workshop to buy yours.
         </p>
       </Banner>
