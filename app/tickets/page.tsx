@@ -79,6 +79,12 @@ export default function TicketsPage() {
         </i>
       </Banner>
 
+      <Banner>
+        <p className="font-family-lato font-size-sm mg-btm-lg">
+          Tickets no longer available online. Pop down to The Workshop to buy yours.
+        </p>
+      </Banner>
+
       <div
         id="ticketbox_ph_41322750"
         dangerouslySetInnerHTML={{
