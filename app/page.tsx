@@ -21,21 +21,17 @@ export default function Home() {
           />
         </div>
 
-        <time className="font-size-xl mg-btm-md">17th - 18th October 2025</time>
-
-        <p className="font-size-md mg-btm-lg">
-          A celebration of grassroots music, independent artists & community by
-          the sea in Folkestone, Kent.
+        <p className="font-size-xl mg-btm-lg">
+          Thank you for for an exceptional 2nd edition
         </p>
 
-        <div className="mg-btm-md">
-          <Button
-            destination="outbound"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="/images/compass-clash-finder.jpg"
-          >
-            Clashfinder / Schedule
+        <p className="font-size-md mg-btm-lg">
+          Sign up to our newsletter to be the first to know about our 2026 plans
+        </p>
+
+        <div className="mg-btm-lg">
+          <Button href="/mailing-list" target="_blank">
+            Join the mailing list
           </Button>
         </div>
 
