@@ -11,10 +11,16 @@ export default function LineUpPage() {
     <Section className={styles.LineUp}>
       <time className="font-size-md mg-btm-md">17th - 18th October 2025</time>
 
-      <p className="font-family-lato font-size-sm mg-btm-lg">
+      <p className="font-family-lato font-size-sm mg-btm-md">
         A celebration of grassroots music, independent artists & community by
         the sea in Folkestone, Kent.
       </p>
+
+      <div className="mg-btm-lg">
+        <NextLink className="font-size-lg" href="/archive/2025/venues">
+          Venues
+        </NextLink>
+      </div>
 
       <h1 className={`${styles["LineUp-title"]} font-size-xxl mg-btm-md`}>
         Line Up
@@ -28,7 +34,7 @@ export default function LineUpPage() {
       <ul className={styles["LineUp-artists"]}>
         {artists.map((artist) => (
           <li key={artist.slug}>
-            <NextLink href={`/artist/${artist.slug}`}>
+            <NextLink href={`/archive/2025/artist/${artist.slug}`}>
               <Artist artist={artist} />
             </NextLink>
           </li>

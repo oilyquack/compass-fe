@@ -7,13 +7,12 @@ import CompassLogo from "@/assets/CompassLogo";
 import styles from "./NavBar.module.css";
 
 const leftLinks = [
-  { href: "/line-up", label: "Lineup" },
-  { href: "/tickets", label: "Tickets" },
-  { href: "/venues", label: "Venues" },
-];
-const rightLinks = [
+  { href: "/archive/2025", label: "2025" },
   { href: "/about", label: "About" },
   { href: "/faqs", label: "FAQs" },
+];
+
+const rightLinks = [
   { href: "/cookies", label: "Cookies" },
   { href: "/privacy", label: "Privacy" },
 ];
