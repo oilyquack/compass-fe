@@ -11,16 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: 'https://www.compass-music.com/apply',
+      url: 'https://www.compass-music.com/archive/2025/',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'yearly',
       priority: 0.5,
-    },
-    {
-      url: 'https://www.compass-music.com/line-up',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
     },
     {
       url: 'https://www.compass-music.com/mailing-list',
@@ -41,27 +35,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: 'https://www.compass-music.com/tickets',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
       url: 'https://www.compass-music.com/volunteer',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: 'https://www.compass-music.com/venues',
+      url: 'https://www.compass-music.com/archive/2025/venues',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'yearly',
       priority: 0.6,
     },
     ...artists.map((artist) => ({
-        url: `https://www.compass-music.com/artist/${artist.slug}`,
+        url: `https://www.compass-music.com/archive/2025/artist/${artist.slug}`,
         lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
+        changeFrequency: 'yearly' as const,
         priority: 0.9,
     }))
   ]
